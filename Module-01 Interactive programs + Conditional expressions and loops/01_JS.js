@@ -1,2 +1,1 @@
-alert('Hi from here too!');
-prompt("yo wassup")
+console.log("I'm printing to console!")
