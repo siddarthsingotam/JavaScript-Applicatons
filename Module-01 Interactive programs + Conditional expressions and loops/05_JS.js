@@ -3,7 +3,7 @@
 const year = parseInt(prompt('Enter year: '));
 
 if (year % 100 === 0){
-    if(year % 400 === 0){
+    if(year % 400 === 0 && year % 4 === 0){
         document.querySelector('#output5').innerHTML = `${year} Is a leap year.`;
     }
 }
