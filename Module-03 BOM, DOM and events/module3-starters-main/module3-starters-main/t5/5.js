@@ -93,3 +93,36 @@ const picArray = [
 ];
 
 // add your code here
+
+const section = document.getElementById('pictures');
+
+for (let i=0; i < picArray.length; i++) {
+  let article = document.createElement('article');
+  article.className = 'miniContainer';
+
+  let title = picArray[i].title;
+  let caption = picArray[i].caption;
+  let description = picArray[i].description;
+  let image = picArray[i].image.medium;
+  let h2 = document.createElement('h2');
+  h2.innerText=`${title}`;
+
+  let figure = document.createElement('figure');
+  let img = document.createElement('img');
+  img.src =`${image}`;
+  img.alt =`${title}`;
+
+  let figcaption = document.createElement('figcaption');
+  figcaption.innerText =`${caption}`;
+
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+
+  let p = document.createElement('p');
+  p.innerText = `${description}`;
+
+  article.appendChild(h2);
+  article.appendChild(figure);
+  article.appendChild(p);
+  section.appendChild(article);
+}
