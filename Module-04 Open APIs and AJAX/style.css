@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+*{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+html{
+    margin: 0
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/wallpaperleatherart.webp);
+    background-size: 100%;
+}
+
+header {
+    margin:0;
+    padding-top: 0;
+    border-top: 0;
+    /*background-color: dodgerblue;*/
+}
+
+#heading {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #3ea9dd;
+    font-size: xxx-large;
+}
+
+#showTitle {
+    text-align: center;
+}
+
+#showImg {
+    display: block;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: aliceblue;
+}
+.contain{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /*background-color: #3ea9dd;*/
+    background: rgba(62, 169, 221, 0.3);
+    padding-bottom: 2rem;
+    border-radius: 20px;
+}
+
+#showSummary {
+    /*line-height: 2rem;*/
+    padding: 1rem;
+    text-align: center;
+
+}
+
+#showGenres::before {
+    content: "Genres: ";
+    padding-left: 2rem;
+}
+
+.textCentre {
+    padding-left: 2rem;
+    text-align: center;
+    color: lawngreen;
+}
